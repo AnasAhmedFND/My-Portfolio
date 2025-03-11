@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Whon from './h-img/portfolio.jpg'
 import { FaHome } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io";
@@ -6,10 +6,24 @@ import { MdOutlineBusinessCenter } from "react-icons/md";
 import { FaDiagramProject } from "react-icons/fa6";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FaArrowRight } from "react-icons/fa";
+import { TiThMenu } from "react-icons/ti";
+import { ImCross } from "react-icons/im";
 
 const Hero = () => {
+
+  let [menu, setMenu] = useState(false)
+
+  const hendelMenuBar = () => {
+    setMenu(!menu)
+  }
+  console.log(menu);
+  
+  
+  
+
+
   return (
-    <section className=' bg-[#212428] text-white py-10  px-2'>
+    <section className=' bg-[#212428] text-white md:py-10 py-4  px-2'>
 
       <div className="flex md:flex-row flex-col-reverse  gap-[2%]  ">
 
@@ -24,7 +38,7 @@ const Hero = () => {
 
           <div className="md:w-[60%]  ">
 
-            <div className="md:mt-20 mt-10 text-yellow-600  flex gap-1 items-center relative">
+            <div className="md:mt-20 mt-5 text-yellow-600  flex gap-1 items-center relative">
               <p className='md:w-[40px]  bg-yellow-600 h-[4px] rounded-md'></p>
               <h1 className='  font-bold md:text-6xl text-3xl md:ml-0 ml-3 '> <span className='md:opacity-0 absolute left-0 '>-</span> I'M ANAS AHMED.</h1>
 
@@ -41,12 +55,20 @@ const Hero = () => {
         </div>
 
 
-        <div className="md:w-[5%] flex flex-col gap-8 text-2xl  ">
-          <p className='mt-12  w-[40px] h-[40px] rounded-full flex justify-center items-center hover:bg-yellow-600'><FaHome className='w-[50px] ' /></p>
-          <p className=' w-[40px] h-[40px]  rounded-full flex  justify-center items-center hover:bg-yellow-600 '><IoIosContact className='w-[50px] ' /></p>
-          <p className=' w-[40px] h-[40px]  rounded-full flex  justify-center items-center hover:bg-yellow-600 '><MdOutlineBusinessCenter className='w-[50px] ' /></p>
-          <p className=' w-[40px] h-[40px]  rounded-full flex  justify-center items-center hover:bg-yellow-600 '><FaDiagramProject className='w-[50px] ' /></p>
-          <p className=' w-[40px] h-[40px]  rounded-full flex  justify-center items-center hover:bg-yellow-600 '><HiOutlineMailOpen className='w-[50px] ' /></p>
+        <ul className={` md:w-[5%] flex flex-col gap-8 text-2xl md:static  ${menu ? 'absolute top-20 left-0 pb-14 bg-yellow-500 w-full duration-1000 ease-in-out ' : 'absolute top-19 -left-72 duration-700 ease-in-out ' }`} >
+          <li className='mt-12  w-[40px] h-[40px] rounded-full flex justify-center items-center hover:bg-yellow-600'> <FaHome className='w-[50px] ' /> <span className='font-bold md:hidden'>Home</span> </li>
+
+          <li className=' w-[40px] h-[40px]  rounded-full flex  justify-center items-center hover:bg-yellow-600 '><IoIosContact className='w-[50px] ' /></li>
+
+          <li className=' w-[40px] h-[40px]  rounded-full flex  justify-center items-center hover:bg-yellow-600 '><MdOutlineBusinessCenter className='w-[50px] ' /></li>
+
+          <li className=' w-[40px] h-[40px]  rounded-full flex  justify-center items-center hover:bg-yellow-600 '><FaDiagramProject className='w-[50px] ' /></li>
+
+          <li className=' w-[40px] h-[40px]  rounded-full flex  justify-center items-center hover:bg-yellow-600 '><HiOutlineMailOpen className='w-[50px] ' /></li>
+        </ul>
+
+        <div className=" ">
+          <p onClick={hendelMenuBar} className='md:hidden text-2xl  '>{menu === true ? <ImCross className=' ml-[300px] w-[30px] h-[30px] flex justify-center items-center rounded-sm text-[#ddb2dd] z-20 ' />  : <TiThMenu className='border border-[#f5f5] ml-[300px] w-[30px] h-[30px] flex justify-center items-center rounded-sm  ' /> } </p>
         </div>
 
       </div>
