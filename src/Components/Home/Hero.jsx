@@ -8,18 +8,20 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 import { FaArrowRight } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
 
+  // menubar show ...........................................
   let [menu, setMenu] = useState(false)
 
   const hendelMenuBar = () => {
     setMenu(!menu)
   }
   console.log(menu);
-  
-  
-  
+
+
+
 
 
   return (
@@ -27,10 +29,10 @@ const Hero = () => {
 
       <div className="flex md:flex-row flex-col-reverse  gap-[2%]  ">
 
-        <div className="flex md:flex-row flex-col-reverse gap-[4%] w-[92%]  ">
-          <div className="flex md:justify-end md:w-[32%] ml-[4%] md:mt-0 mt-5">
-            <div className=" border bg-[#D1CDCE] rounded-2xl flex flex-col justify-end ">
-              <img className=' rounded-2xl  ' src={Whon} alt="" />
+        <div className="flex md:flex-row flex-col-reverse gap-[4%] w-[92%]  container mx-auto">
+          <div className="flex md:justify-end md:w-[32%] ml-[4%] md:mt-0 mt-5  ">
+            <div className=" border bg-[#D1CDCE] rounded-2xl flex flex-col justify-end  ">
+              <img className=' rounded-2xl hidden md:block ' src={Whon} alt="" />
 
             </div>
 
@@ -43,7 +45,15 @@ const Hero = () => {
               <h1 className='  font-bold md:text-6xl text-3xl md:ml-0 ml-3 '> <span className='md:opacity-0 absolute left-0 '>-</span> I'M ANAS AHMED.</h1>
 
             </div>
-            <h4 className='md:mt-5 mt-3 font-bold md:text-5xl text-3xl md:ml-[45px] ml-[15px] '>Front End Developer</h4>
+            
+
+            <TypeAnimation className='md:mt-5 mt-3 font-bold md:text-5xl text-3xl md:ml-[45px] ml-[15px]  '
+              sequence={[' Front End Developer', 1000, 'React Developer', 1000, 'Next JS Developer', 1000]}
+              style={{ fontSize: 100 }}
+              repeat={Infinity}
+            />
+
+
             <p className='mt-5 '>I'm a professional <span className='font-bold'>Front-End Developer</span> and focused on crafting clean & user-friendly experiences. With expertise in Bootstrap, Tailwind CSS, React JS and Next JS. I bring <br /> innovative web solutions to life. Let's build something great together!</p>
 
             <div className="flex gap-3 md:w-[50%] items-center mt-6  relative ">
@@ -55,20 +65,20 @@ const Hero = () => {
         </div>
 
 
-        <ul className={` md:w-[5%] flex flex-col gap-8 text-2xl md:static  ${menu ? 'absolute top-20 left-0 pb-14 bg-yellow-500 w-full duration-1000 ease-in-out ' : 'absolute top-19 -left-72 duration-700 ease-in-out ' }`} >
-          <li className='mt-12  w-[40px] h-[40px] rounded-full flex justify-center items-center hover:bg-yellow-600'> <FaHome className='w-[50px] ' /> <span className='font-bold md:hidden'>Home</span> </li>
+        <ul className={` md:w-[5%] flex flex-col gap-6 text-2xl md:static  px-2 ${menu ? 'absolute top-18 left-0 pb-14 bg-yellow-500 w-full duration-1000 ease-in-out ' : 'absolute top-19 -left-72 duration-700 ease-in-out '}`} >
+          <li className='mt-12 md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 '> <FaHome className='w-[50px] ' /> <span className='font-bold md:hidden '>Home</span> </li>
 
-          <li className=' w-[40px] h-[40px]  rounded-full flex  justify-center items-center hover:bg-yellow-600 '><IoIosContact className='w-[50px] ' /></li>
+          <li className='  md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4'><IoIosContact className='w-[50px] text-3xl ' /><span className='font-bold md:hidden'>About</span> </li>
 
-          <li className=' w-[40px] h-[40px]  rounded-full flex  justify-center items-center hover:bg-yellow-600 '><MdOutlineBusinessCenter className='w-[50px] ' /></li>
+          <li className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 '><MdOutlineBusinessCenter className='w-[50px] text-3xl ' /><span className='font-bold md:hidden'>Portfolio</span> </li>
 
-          <li className=' w-[40px] h-[40px]  rounded-full flex  justify-center items-center hover:bg-yellow-600 '><FaDiagramProject className='w-[50px] ' /></li>
+          <li className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 '><FaDiagramProject className='w-[50px] ' /><span className='font-bold md:hidden'>Servics</span> </li>
 
-          <li className=' w-[40px] h-[40px]  rounded-full flex  justify-center items-center hover:bg-yellow-600 '><HiOutlineMailOpen className='w-[50px] ' /></li>
+          <li className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 '><HiOutlineMailOpen className='w-[50px] text-3xl ' /><span className='font-bold md:hidden'>Contact</span> </li>
         </ul>
 
         <div className=" ">
-          <p onClick={hendelMenuBar} className='md:hidden text-2xl  '>{menu === true ? <ImCross className=' ml-[300px] w-[30px] h-[30px] flex justify-center items-center rounded-sm text-[#ddb2dd] z-20 ' />  : <TiThMenu className='border border-[#f5f5] ml-[300px] w-[30px] h-[30px] flex justify-center items-center rounded-sm  ' /> } </p>
+          <p onClick={hendelMenuBar} className='md:hidden text-2xl  '>{menu === true ? <ImCross className=' ml-[300px] w-[30px] h-[30px] flex justify-center items-center rounded-sm text-[#ddb2dd] z-20 ' /> : <TiThMenu className='border border-[#f5f5] ml-[300px] w-[30px] h-[30px] flex justify-center items-center rounded-sm  ' />} </p>
         </div>
 
       </div>
