@@ -10,6 +10,7 @@ import { TiThMenu } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
 import { TypeAnimation } from 'react-type-animation';
 
+
 const Hero = () => {
 
   // menubar show ...........................................
@@ -73,7 +74,9 @@ const Hero = () => {
         <ul className={` md:w-[5%] flex flex-col gap-6 text-2xl md:static  px-2 ${menu ? 'absolute top-18 left-0 pb-14 bg-yellow-500 w-full duration-1000 ease-in-out ' : 'absolute top-19 -left-72 duration-700 ease-in-out '}`} >
           <li className='mt-12 md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group'> <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block '>Home</span>  <FaHome className='w-[50px] ' /> <span className='font-bold md:hidden '>Home</span> </li>
 
+            
           <li className='md:flex-row-reverse  md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border md:border-[#ff55ff15] md:bg-[#ff55ff15] border-b pb-4 cursor-pointer group'> <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block '>About</span> <IoIosContact className='w-[50px] text-3xl ' /><span className='font-bold md:hidden '>About</span> </li>
+           
 
           <li className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group'> <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[63px] '>Portfolio</span> <MdOutlineBusinessCenter className='w-[50px] text-3xl ' /><span className='font-bold md:hidden'>Portfolio</span> </li>
 

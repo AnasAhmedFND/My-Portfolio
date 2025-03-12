@@ -4,7 +4,7 @@ import './App.css'
 import Home from './Pagese/Home'
 
 import RootLayout from './Components/RootLayout'
-import About from './Components/About/About'
+// import About from './Components/About/About'
 
 
 
@@ -15,7 +15,7 @@ function App() {
 
     <Route element={<RootLayout />} >
       <Route path='/' element={<Home />} />
-      <Route path='/about' element={<About/> } />
+      {/* <Route path='/about' element={<About/> } /> */}
       
 
     </Route>
