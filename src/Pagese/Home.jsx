@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '../Components/Home/Hero'
 import About from '../Components/About/About'
+import Skil from '../Components/About/Skil'
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
      <Hero />
      <About />
+     <Skil />
      
     </div>
   )
