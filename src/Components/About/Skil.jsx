@@ -10,7 +10,7 @@ import Git from './A-img/s8.png'
 
 const Skil = () => {
     return (
-        <section className='bg-[#212428] md:py-20 py-5  md:px-0 px-2  '>
+        <section className='bg-[#212428] md:py-14 py-5  md:px-0 px-2  '>
             <div className="container mx-auto text-white ">
                 <h2 className='text-center md:text-5xl text-3xl font-bold '>MY SKILLS</h2>
 
