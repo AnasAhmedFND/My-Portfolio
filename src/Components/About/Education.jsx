@@ -37,6 +37,7 @@ const Education = () => {
                     <h3  className='font-bold text-2xl mt-5 '>FRONTEND DEVELOPER</h3>
                     <p  className='mt-5'>1 year of experience as a frontend developer, skilled in building responsive and user-friendly web interfaces using HTML, CSS, JavaScript, and modern frameworks like React.js.</p>
                 </div>
+                
 
 
             </div>
