@@ -40,11 +40,12 @@ const Footer = () => {
             <div className="flex mt-5 gap-4 ml-12">
             
               <a  className='md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-black flex justify-center items-center text-xl ' href="https://www.facebook.com/anas.ahmed.424120" target='_blank' rel='noopener noreferrer' ><IoLogoFacebook /></a>
-
-
-              <p className='md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-black flex justify-center items-center text-xl '><FaLinkedin  /></p>
+              
+              <a className='md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-black flex justify-center items-center text-xl ' href="https://www.linkedin.com/in/anas-ahmed-802ba1328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' rel='noopener noreferrer'  ><FaLinkedin  /></a>
 
               <a className='md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-black flex justify-center items-center text-xl ' href="https://github.com/AnasAhmedFND" target='_blank' rel='noopener noreferrer'  ><FaGithub /></a>
+
+             
              
 
               <p className='md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-black flex justify-center items-center text-xl '><FaTwitter /></p>
