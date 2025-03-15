@@ -9,8 +9,8 @@ import { IoIosSend } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <section className='bg-[#212428] md:px-0 px-2 container mx-auto'>
-      <div className="py-20  ">
+    <section className='bg-[#212428] md:px-0 px-2 '>
+      <div className="py-20  container mx-auto">
         <div className="relative mt-5">
         <h2 className='md:text-6xl text-4xl font-bold  text-white flex justify-center z-10'>GET IN TOUCH</h2>
         <h3 className='md:text-[110px] text-[70px] font-bold text-center text-white absolute md:-bottom-[50px] -bottom-[30px] opacity-10  md:left-[260px] left-[10px] '>CONTACT</h3>
