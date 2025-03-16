@@ -6,7 +6,7 @@ import Exclusive from './port-img/exclosive.png'
 
 const Portfolio = () => {
   return (
-    <section className='bg-[#212428] md:px-0 px-2 '>
+    <section id='portfolio' className='bg-[#212428] md:px-0 px-2 '>
       <div className="container mx-auto py-20 ">
         <div className="relative ">
           <h2 className='text-center font-bold md:text-5xl text-3xl text-white '>MY <span className='text-yellow-600'>PORTFOLIO</span> </h2>

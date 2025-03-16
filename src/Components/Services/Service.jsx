@@ -11,7 +11,7 @@ import Ser6 from './Ser-img/ser-6.png'
 
 const Service = () => {
   return (
-    <section className='bg-[#212428] md:px-0 px-2 '>
+    <section id='service' className='bg-[#212428] md:px-0 px-2 '>
       <div className="container mx-auto md:py-10  ">
         <div className="relative">
         <h2 className='text-center font-bold md:text-5xl text-3xl text-white'>WHAT I <span className='text-yellow-600'>PROVIDE</span> </h2>
