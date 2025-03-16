@@ -14,25 +14,31 @@ const Portfolio = () => {
         </div>
 
         <div className="md:mt-32 mt-20 md:flex  justify-between  ">
-
+          <a href="https://hekto-ecommerce-project.vercel.app/" target='_blanck' rel='noopener noopener' >
           <div className="relative  ">
           <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Hecto} alt="" />
           <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project</h4>
           </div>
+          </a>
 
+          <a href="https://router-bjpk.vercel.app/" target='_blanck' rel='noopener noopener'>
           <div className="relative md:mt-0 mt-5 ">
           <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Rutar} alt="" />
           <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700  border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>Online  Courses </h4>
           </div>
+          </a>
+          
 
 
         </div>
         <div className="md:mt-10 mt-5 md:flex justify-between  ">
 
+        <a href="https://hekto-ecommerce-project.vercel.app/shop" target='_blanck' rel='noopener noopener'>
           <div className="relative   ">
           <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Hecto} alt="" />
           <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project</h4>
           </div>
+          </a>
 
           <div className="relative md:mt-0 mt-5 ">
             <img className='md:w-[469px] md:h-[194px] h-[148px] rounded-2xl' src={Exclusive} alt="" />

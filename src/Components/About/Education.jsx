@@ -20,7 +20,7 @@ const Education = () => {
                     <div className="border-l-2 pl-8">
                         <div className="flex relative">
                             <p className='border w-[40px] h-[40px] flex justify-center items-center text-2xl rounded-full bg-yellow-600 absolute -left-[54px] bottom-[5px]'><FaGraduationCap /></p>
-                            <p className=' py-1 px-5 font-bold rounded-full bg-[#d2a6d23c] '>2018-2020</p>
+                            <p className=' py-1 px-5 font-bold rounded-full bg-[#d2a6d23c] '>2019-2020</p>
                         </div>
                         <h2 className='font-bold text-2xl mt-5 '>SECONDARY <span className='text-xl'>-Shyampur Union High School</span> </h2>
                         <p className='mt-5'>I completed my secondary to academics showcasing my dedication to academics and helping to develop my foundational knowledge and skills in various subjects.</p>
