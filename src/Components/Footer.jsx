@@ -64,7 +64,7 @@ const Footer = () => {
 
             <div className="flex mt-8 relative ">
             <button className='border-2 border-yellow-600 py-2 pl-8 pr-10 hover:bg-yellow-600 rounded-full md:ml-0 ml-[76px] after:duration-700  '>SEND MESSAGE</button>
-            <p className='absolute w-[40px] h-[40px]  rounded-full flex justify-center items-center text-xl md:left-[150px] left-[225px] top-[2px] bg-yellow-600 '><IoIosSend /></p>
+            <p className='absolute w-[40px] h-[40px]  rounded-full flex justify-center items-center text-xl md:left-[150px] left-[228px] top-[2px] bg-yellow-600 '><IoIosSend /></p>
             </div>
 
           </div>
