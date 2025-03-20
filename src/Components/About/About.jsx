@@ -2,6 +2,7 @@ import React from 'react'
 import { FaDownload } from "react-icons/fa";
 import Whon from './A-img/portfolio.jpg'
 import { IoIosArrowUp } from "react-icons/io";
+import { Link } from 'react-scroll';
 
 const About = () => {
 
@@ -15,8 +16,8 @@ const About = () => {
 
       <img className='md:hidden block w-[200px] h-[210px] mx-auto mt-14 border-8 border-yellow-600 rounded-full ' src={Whon} alt="" />
 
-      <p ><a className='md:fixed  hidden md:block relative md:left-[1172px] top-[500px] w-[50px] h-[50px] bg-yellow-600 rounded-full  items-center text-white text-4xl ' href="#hero"> <IoIosArrowUp className='md:absolute ml-[7px] top-1 '/>
-       </a></p>
+      <p > <Link to='hero' smooth={true} duration={500} > <a className='md:fixed  hidden md:block relative md:left-[1172px] top-[500px] w-[50px] h-[50px] bg-yellow-600 rounded-full  items-center text-white text-4xl ' href="#hero"> <IoIosArrowUp className='md:absolute ml-[7px] top-1 '/>
+       </a> </Link> </p>
 
       <div className=" text-white md:flex container mx-auto  gap-[5%] md:mt-28 mt-10 ">
         <div className="  md:w-[65%] md:py-10">

@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import Whon from './h-img/portfolio.jpg'
 import { FaHome } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io";
@@ -10,6 +10,7 @@ import { TiThMenu } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
 import { TypeAnimation } from 'react-type-animation';
 import { useRef } from 'react';
+import {Link} from 'react-scroll';
 
 
 const Hero = () => {
@@ -85,20 +86,20 @@ const scrollToSection = (ref) => {
           <li> <a className='md:fixed top-[5%]   mt-12 md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#home" onClick={() => scrollToSection(homeRef) } > <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[146px] hidden md:group-hover:block '>Home</span>  <FaHome className='w-[50px] ' /> <span className='font-bold md:hidden '>Home</span>
           
           </a> </li>
-
-            
-          <li className='md:fixed top-[25%] '> <a className=' md:flex-row-reverse  md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border md:border-[#ff55ff15] md:bg-[#ff55ff15] border-b pb-4 cursor-pointer group' href="#about"  > <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[147px] hidden md:group-hover:block '>About</span> <IoIosContact className='w-[50px] text-3xl ' /><span className='font-bold md:hidden '>About</span>
-          </a> </li>
            
 
-          <li className='md:fixed top-[37%] '> <a className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#portfolio">  <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[100px] '>Portfolio</span> <MdOutlineBusinessCenter className='w-[50px] text-3xl ' /><span className='font-bold md:hidden'>Portfolio</span> 
-          </a> </li>
+          <li className='md:fixed top-[25%] ' > <Link to='about' smooth={true} duration={500} > <a className=' md:flex-row-reverse  md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border md:border-[#ff55ff15] md:bg-[#ff55ff15] border-b pb-4 cursor-pointer group' href="#about"  > <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[147px] hidden md:group-hover:block '>About</span> <IoIosContact className='w-[50px] text-3xl ' /><span className='font-bold md:hidden '>About</span>
+          </a> </Link> </li>          
+           
 
-          <li className='md:fixed top-[49%] '> <a  className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#service">  <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[100px] '>Servics</span> <FaDiagramProject className='w-[50px] ' /><span className='font-bold md:hidden'>Servics</span> 
-          </a> </li>
+          <li className='md:fixed top-[37%] '> <Link to='portfolio' smooth={true} duration={500} > <a className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#portfolio">  <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[100px] '>Portfolio</span> <MdOutlineBusinessCenter className='w-[50px] text-3xl ' /><span className='font-bold md:hidden'>Portfolio</span> 
+          </a> </Link> </li>
 
-          <li className='md:fixed top-[61%] '> <a className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#contact"> <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[100px] '>Contact</span> <HiOutlineMailOpen className='w-[50px] text-3xl ' /><span className='font-bold md:hidden'>Contact</span>
-          </a> </li>
+          <li className='md:fixed top-[49%] '> <Link to='service' smooth={true} duration={500} > <a  className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#service">  <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[100px] '>Servics</span> <FaDiagramProject className='w-[50px] ' /><span className='font-bold md:hidden'>Servics</span> 
+          </a> </Link> </li>
+
+          <li className='md:fixed top-[61%] '> <Link to='contact' smooth={true} duration={500} > <a className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#contact"> <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[100px] '>Contact</span> <HiOutlineMailOpen className='w-[50px] text-3xl ' /><span className='font-bold md:hidden'>Contact</span>
+          </a> </Link> </li>
 
          
         </ul>
