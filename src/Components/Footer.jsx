@@ -105,15 +105,15 @@ const Footer = () => {
               />
 
             </div>
-
-            <textarea className='border md:mt-10 mt-5 rounded-l-xl rounded-t-xl w-full bg-[#dcdae455] p-2 ' name="message"
-              id="messege"
+           
+            <textarea className='border md:mt-10 mt-5 rounded-l-xl rounded-t-xl w-full bg-[#dcdae455] p-2 '
+              name="message"
+              placeholder="Your message"
               value={message}
-              placeholder='Your message'>
               onChange={(e) => setMessage(e.target.value)}
               rows="4"
               required
-            </textarea>
+            ></textarea>
 
             <div className="flex mt-8 relative ">
               <button
