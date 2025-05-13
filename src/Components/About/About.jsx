@@ -42,7 +42,9 @@ const About = () => {
 
           </div>
           <div className="flex gap-5 items-center relative group  mt-10 md:w-[38%] *:">
-            <button className='border-2 border-yellow-600 font-bold   py-2 pl-7 pr-12 rounded-full group-hover:bg-yellow-600 hover:duration-300 md:ml-0 ml-5 '>DOWNLOAD RESUME  </button>
+
+            <a className='border-2 border-yellow-600 font-bold   py-2 pl-7 pr-12 rounded-full group-hover:bg-yellow-600 hover:duration-300 md:ml-0 ml-5' href="/anas_cv.pdf" download>DOWNLOAD RESUME</a>            
+
             <p className=' w-[42px] h-[42px] rounded-full absolute flex justify-center items-center md:left-[203px] left-[218px]  bg-yellow-600'><FaDownload className=' text-2xl  ' /></p>
           </div>
 
