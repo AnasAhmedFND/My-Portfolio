@@ -73,7 +73,10 @@ const scrollToSection = (ref) => {
             <p className='md:mt-5 mt-3 '>I'm a professional <span className='font-bold'>Front-End Developer</span> and focused on crafting clean & user-friendly experiences. With expertise in Bootstrap, Tailwind CSS, React JS and Next JS. I bring <br /> innovative web solutions to life. Let's build something great together!</p>
 
             <div className="flex gap-3 md:w-[50%] items-center mt-6  relative ">
+              <Link to='about' smooth={true} duration={500} >
               <button className='  border border-yellow-600  rounded-full pl-10 pr-14 py-4 text-[16px] hover:bg-yellow-600 after:duration-500 after:right-[250px] after:ease-in-out hover:duration-700 '>MORE ABOUT ME</button>
+              
+              </Link>
               <p className=' w-[57px] h-[57px] bg-yellow-600 rounded-full flex justify-center items-center absolute left-[171px] text-[26px] '><FaArrowRight /></p>
             </div>
           </div>
