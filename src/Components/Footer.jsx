@@ -31,7 +31,7 @@ const Footer = () => {
   };
 
   const hendeleSuccess = () => {
-    toast.success('send email')
+    toast.success('Success')
   }
 
   return (
