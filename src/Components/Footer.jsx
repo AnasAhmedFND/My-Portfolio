@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { FiMessageCircle } from "react-icons/fi";
 import { IoCall } from "react-icons/io5";
 import { IoLogoFacebook } from "react-icons/io5";
@@ -6,36 +6,31 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
-import emailjs from "emailjs-com";
+import emailjs, { send } from "emailjs-com";
 
 const Footer = () => {
+  const form = useRef()
 
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
 
-  const handleSubmit = (e) => {
+   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_cxl7pyi ",
-        "template_koy4m26 ",
-        e.target, PUBLIC_KEY
-
-      )
-
+      .sendForm('service_cxl7pyi', 'template_koy4m26', form.current, {
+        publicKey: 'gJcAuW6kxQVQYiiPi',
+      })
       .then(
-        (result) => {
-          console.log(result.text);
-          alert("Message sent successfully!");
+        () => {
+          console.log('SUCCESS!');
         },
         (error) => {
-          console.log(error.text);
-          alert("Failed to send message, please try again.");
-        }
+          console.log('FAILED...', error.text);
+        },
       );
-  }
+  };
 
   return (
     <section id='contact' className='bg-[#212428] md:px-0 px-2 '>
@@ -83,11 +78,11 @@ const Footer = () => {
 
           </div>
 
-          <form onSubmit={handleSubmit} className="right md:w-[58%] md:mt-0 mt-5  " action="">
+          <form ref={form} onSubmit={sendEmail} className="right md:w-[58%] md:mt-0 mt-5  " action="">
             <div className="md:flex gap-[5%] ">
               <input className='border py-2 px-2 rounded-lg bg-[#dcdae455] md:w-[40%] w-full'
                 type="text"
-                name='name'
+                name='from_name'
                 placeholder='Your name'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -97,7 +92,7 @@ const Footer = () => {
 
               <input className='border py-2 px-2 rounded-lg bg-[#dcdae455] md:w-[40%] w-full md:mt-0 mt-5 '
                 type="email"
-                name='email'
+                name='from_email'
                 placeholder='Your email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -118,6 +113,7 @@ const Footer = () => {
             <div className="flex mt-8 relative ">
               <button
                 type='submit'
+                value={send}
                 className='border-2 border-yellow-600 py-2 pl-8 pr-10 hover:bg-yellow-600 rounded-full md:ml-0 ml-[76px] after:duration-700  '>SEND MESSAGE</button>
 
               <p className='absolute w-[40px] h-[40px]  rounded-full flex justify-center items-center text-xl md:left-[150px] left-[228px] top-[2px] bg-yellow-600 '><IoIosSend /></p>
