@@ -7,17 +7,18 @@ import { FaGithub } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
 import emailjs, { send } from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Footer = () => {
   const form = useRef()
 
- 
 
-   const sendEmail = (e) => {
+
+  const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_cxl7pyi', 'template_koy4m26', form.current,  'gJcAuW6kxQVQYiiPi'
+      .sendForm('service_cxl7pyi', 'template_koy4m26', form.current, 'gJcAuW6kxQVQYiiPi'
       )
       .then(
         () => {
@@ -28,6 +29,10 @@ const Footer = () => {
         },
       );
   };
+
+  const hendeleSuccess = () => {
+    toast.success('send email')
+  }
 
   return (
     <section id='contact' className='bg-[#212428] md:px-0 px-2 '>
@@ -81,7 +86,7 @@ const Footer = () => {
                 type="text"
                 name='from_name'
                 placeholder='Your name'
-                
+
 
               />
 
@@ -89,21 +94,34 @@ const Footer = () => {
                 type="email"
                 name='from_email'
                 placeholder='Your email'
-               
+
               />
 
             </div>
-           
+
             <textarea className='border md:mt-10 mt-5 rounded-l-xl rounded-t-xl w-full bg-[#dcdae455] p-2 '
               name="message"
-              placeholder="Your message"              
+              placeholder="Your message"
             ></textarea>
 
             <div className="flex mt-8 relative ">
-              <button
+              <button onClick={hendeleSuccess}
                 type='submit'
                 value={send}
                 className='border-2 border-yellow-600 py-2 pl-8 pr-10 hover:bg-yellow-600 rounded-full md:ml-0 ml-[76px] after:duration-700  '>SEND MESSAGE</button>
+              <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+               
+              />
 
               <p className='absolute w-[40px] h-[40px]  rounded-full flex justify-center items-center text-xl md:left-[150px] left-[228px] top-[2px] bg-yellow-600 '><IoIosSend /></p>
             </div>
