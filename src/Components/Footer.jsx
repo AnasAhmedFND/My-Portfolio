@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import { FiMessageCircle } from "react-icons/fi";
 import { IoCall } from "react-icons/io5";
 import { IoLogoFacebook } from "react-icons/io5";
@@ -6,22 +6,19 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
-import emailjs, { send } from "emailjs-com";
+import emailjs, { send } from '@emailjs/browser';
 
 const Footer = () => {
   const form = useRef()
 
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
+ 
 
    const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_cxl7pyi', 'template_koy4m26', form.current, {
-        publicKey: 'gJcAuW6kxQVQYiiPi',
-      })
+      .sendForm('service_cxl7pyi', 'template_koy4m26', form.current,  'gJcAuW6kxQVQYiiPi'
+      )
       .then(
         () => {
           console.log('SUCCESS!');
@@ -84,9 +81,7 @@ const Footer = () => {
                 type="text"
                 name='from_name'
                 placeholder='Your name'
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
+                
 
               />
 
@@ -94,20 +89,14 @@ const Footer = () => {
                 type="email"
                 name='from_email'
                 placeholder='Your email'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
+               
               />
 
             </div>
            
             <textarea className='border md:mt-10 mt-5 rounded-l-xl rounded-t-xl w-full bg-[#dcdae455] p-2 '
               name="message"
-              placeholder="Your message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              rows="4"
-              required
+              placeholder="Your message"              
             ></textarea>
 
             <div className="flex mt-8 relative ">
