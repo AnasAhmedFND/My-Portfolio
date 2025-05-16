@@ -3,8 +3,15 @@ import { FaDownload } from "react-icons/fa";
 import Whon from './A-img/portfolio.jpg'
 import { IoIosArrowUp } from "react-icons/io";
 import { Link } from 'react-scroll';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 const About = () => {
+
+  const hendeleResume = () => {
+    toast.success('Download Resume')
+
+  }
 
   return (
     <section id='about' className='bg-[#212428] md:py-20 py-10 px-2 md:px-0'>
@@ -41,9 +48,22 @@ const About = () => {
             </div>
 
           </div>
-          <div className="flex gap-5 items-center relative group  mt-10 md:w-[38%] *:">
-
-            <a className='border-2 border-yellow-600 font-bold   py-2 pl-7 pr-12 rounded-full group-hover:bg-yellow-600 hover:duration-300 md:ml-0 ml-5' href="/anas_cv.pdf " download >DOWNLOAD RESUME</a>            
+          <div className="flex  items-center relative group  mt-10 md:w-[38%] ">            
+            
+            <a onClick={hendeleResume} className='border-2 border-yellow-600 font-bold   py-2 pl-7 pr-12 rounded-full group-hover:bg-yellow-600 hover:duration-300 md:ml-0 ml-5' href="/anas_cv.pdf " download >DOWNLOAD RESUME</a>
+             <ToastContainer
+                position="top-center"
+                autoClose={1000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+               
+              />        
 
             <p className=' w-[42px] h-[42px] rounded-full absolute flex justify-center items-center md:left-[203px] left-[218px]  bg-yellow-600'><FaDownload className=' text-2xl  ' /></p>
           </div>

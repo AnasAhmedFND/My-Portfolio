@@ -111,7 +111,7 @@ const Footer = () => {
                 className='border-2 border-yellow-600 py-2 pl-8 pr-10 hover:bg-yellow-600 rounded-full md:ml-0 ml-[76px] after:duration-700  '>SEND MESSAGE</button>
               <ToastContainer
                 position="top-center"
-                autoClose={5000}
+                autoClose={2000}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick={false}
