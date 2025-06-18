@@ -1,6 +1,6 @@
 import React from 'react'
 import Hecto from './port-img/hecto.png'
-import Rutar from './port-img/rutar.png'
+import Shane from './port-img/shane.png'
 import Exclusive from './port-img/exclosive.png'
 import Jenstore from './port-img/jinstore.png'
 
@@ -35,10 +35,10 @@ const Portfolio = () => {
         </div>
         <div className="md:mt-10 mt-5 md:flex justify-between  ">
 
-        <a href="https://hekto-ecommerce-project.vercel.app/shop" target='_blanck' rel='noopener noopener'>
+        <a href="https://shane-resturant.vercel.app/" target='_blanck' rel='noopener noopener'>
           <div className="relative   ">
-          <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Hecto} alt="" />
-          <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project</h4>
+          <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Shane} alt="" />
+          <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>Resturant Project</h4>
           </div>
           </a>
 
