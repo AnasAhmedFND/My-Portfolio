@@ -107,7 +107,7 @@ const Hero = () => {
 
         </ul>
 
-        <div className=" ">
+        <div className="  ">
           <p onClick={hendelMenuBar} className='md:hidden text-2xl  '>{menu === true ? <ImCross className=' ml-[300px] w-[30px] h-[30px] flex justify-center items-center rounded-sm text-[#ddb2dd] z-20 ' /> : <TiThMenu className='border border-[#f5f5] ml-[300px] w-[30px] h-[30px] flex justify-center items-center rounded-sm  ' />} </p>
         </div>
 

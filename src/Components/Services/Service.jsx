@@ -15,7 +15,10 @@ const Service = () => {
       <div className="container mx-auto md:py-10  ">
         <div className="relative">
         <h2 className='text-center font-bold md:text-5xl text-3xl text-white'>WHAT I <span className='text-yellow-600'>PROVIDE</span> </h2>
-        <h2 className='md:text-[110px] text-[80px] font-bold text-center text-white absolute md:-bottom-[50px] -bottom-[40px] opacity-10  md:left-[295px] left-[20px] '>SERVICE</h2>
+        <div className="flex justify-center ">
+        <h2 className='md:text-[110px] text-[80px] font-bold text-white absolute md:-bottom-14 -bottom-[40px] opacity-10 tracking-widest '>SERVICE</h2>
+
+        </div>
 
         </div>
         <div className="flex flex-wrap gap-5  text-white md:mt-20 mt-14 ">

@@ -18,13 +18,17 @@ const About = () => {
 
       <div className="relative ">
         <h2 className='md:text-6xl text-4xl font-bold  text-white flex justify-center z-10'> ABOUT  <span className=' ml-3 text-yellow-600'> ME </span> </h2>
-        <h2 className='md:text-[110px] text-[80px] font-bold text-center text-white absolute md:-bottom-[50px] -bottom-[40px] opacity-10  md:left-[410px] left-[10px] '>RECUME</h2>
+        <div className="flex justify-center  ">
+        <h2 className='md:text-[110px] text-[80px]  font-bold  text-white opacity-10 absolute md:-bottom-12 -bottom-[40px] '>RECUME</h2>
+          
+        </div>
       </div>
 
       <img className='md:hidden block w-[200px] h-[210px] mx-auto mt-14 border-8 border-yellow-600 rounded-full ' src={Whon} alt="" />
 
-      <p > <Link to='hero' smooth={true} duration={500} > <a className='md:fixed  hidden md:block relative md:left-[1172px] top-[500px] w-[50px] h-[50px] bg-yellow-600 rounded-full  items-center text-white text-4xl ' href="#hero"> <IoIosArrowUp className='md:absolute ml-[7px] top-1 '/>
-       </a> </Link> </p>
+      <p > <Link to='hero' smooth={true} duration={500} > <a className='md:fixed  hidden md:block relative md:left-[93.5%] top-[500px] w-[50px] h-[50px] bg-yellow-600 rounded-full  items-center text-white text-4xl ' href="#hero"> <IoIosArrowUp className='md:absolute ml-[7px] top-1 '/>
+       </a> </Link> 
+       </p>
 
       <div className=" text-white md:flex container mx-auto  gap-[5%] md:mt-28 mt-10 ">
         <div className="  md:w-[65%] md:py-10">
@@ -65,7 +69,7 @@ const About = () => {
                
               />        
 
-            <p className=' w-[42px] h-[42px] rounded-full absolute flex justify-center items-center md:left-[203px] left-[218px]  bg-yellow-600'><FaDownload className=' text-2xl  ' /></p>
+            <p className=' w-[42px] h-[42px] rounded-full absolute flex justify-center items-center md:left-[203px] left-[218px]  bg-yellow-600 cursor-pointer '><FaDownload className=' text-2xl  ' /></p>
           </div>
 
         </div>

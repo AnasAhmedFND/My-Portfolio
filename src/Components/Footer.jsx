@@ -39,7 +39,10 @@ const Footer = () => {
       <div className="py-20  container mx-auto">
         <div className="relative mt-5">
           <h2 className='md:text-6xl text-4xl font-bold  text-white flex justify-center z-10'>GET IN TOUCH</h2>
-          <h3 className='md:text-[110px] text-[70px] font-bold text-center text-white absolute md:-bottom-[50px] -bottom-[30px] opacity-10  md:left-[260px] left-[10px] '>CONTACT</h3>
+          <div className="flex justify-center">
+            <h3 className='md:text-[110px] text-[70px] font-bold  text-white absolute md:-bottom-12 -bottom-[30px] opacity-10   '>CONTACT</h3>
+
+          </div>
         </div>
 
         <div className="text-white md:flex gap-[4%] mt-16 ">
@@ -104,11 +107,11 @@ const Footer = () => {
               placeholder="Your message"
             ></textarea>
 
-            <div className="flex mt-8 relative ">
+            <div className="flex mt-8 relative cursor-pointer">
               <button onClick={hendeleSuccess}
                 type='submit'
                 value={send}
-                className='border-2 border-yellow-600 py-2 pl-8 pr-10 hover:bg-yellow-600 rounded-full md:ml-0 ml-[76px] after:duration-700  '>SEND MESSAGE</button>
+                className='border-2 border-yellow-600 py-2 pl-8 pr-10 hover:bg-yellow-600 rounded-full md:ml-0 ml-[76px] after:duration-700 cursor-pointer '>SEND MESSAGE</button>
               <ToastContainer
                 position="top-center"
                 autoClose={2000}
@@ -120,10 +123,10 @@ const Footer = () => {
                 draggable
                 pauseOnHover
                 theme="colored"
-               
+
               />
 
-              <p className='absolute w-[40px] h-[40px]  rounded-full flex justify-center items-center text-xl md:left-[150px] left-[228px] top-[2px] bg-yellow-600 '><IoIosSend /></p>
+              <p className='absolute w-[40px] h-[40px]  rounded-full flex justify-center items-center text-xl md:left-[150px] left-[228px] top-[2px] bg-yellow-600  '><IoIosSend /></p>
             </div>
 
           </form>
