@@ -49,7 +49,7 @@ const Portfolio = () => {
 
           <a href="https://jinstore-3f7k.vercel.app/" target='_blanck' rel='noopener noopener' >
           <div className="relative md:mt-0 mt-5 ">
-            <img className='md:w-[469px] md:h-[194px]  rounded-2xl' src={Jenstore} alt="" />
+            <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Jenstore} alt="" />
             <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 ease-in-out border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project <br /> 'Jinstore' </h4>
           </div>
           </a>
