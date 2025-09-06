@@ -6,7 +6,9 @@ const Education = () => {
     return (
         <section className='bg-[#212428] md:pt-20 pt-10 pb-10 md:px-0 px-2 '>
             <h2 className='text-center font-bold text-3xl text-white'>EXPERIENCE & EDUCATION</h2>
+            {/* Education card's mother div */}
             <div className="container mx-auto text-white  md:flex md:mt-16 mt-10 gap-[4%] ">
+                {/* Left card 1/2 */}
                 <div className="flex flex-col gap-10  md:w-[48%] md:ml-0 ml-5 ">
                     <div className="border-l-2 pl-8 ">
                         <div className="flex relative">
@@ -29,15 +31,30 @@ const Education = () => {
 
                 </div>
 
-                <div className=" md:w-[48%] h-[30%] border-l-2 pl-8 md:ml-0 ml-5 md:mt-0 mt-10 ">
-                    <div className="flex relative">
-                        <p  className='border w-[40px] h-[40px] flex justify-center items-center text-2xl rounded-full bg-yellow-600 absolute -left-[54px] bottom-[5px]'><HiOutlineMailOpen /></p>
-                        <p className=' py-1 px-5 font-bold rounded-full bg-[#d2a6d23c] '>JUN,2024-PRESENT</p>
+                <div className=" md:w-[48%] flex flex-col gap-10  md:pl-8 md:ml-0 ml-5 md:mt-0 mt-10  ">
+                    <div className="border-l-2 pl-8">
+                        <div className="flex relative">
+                            <p className='border w-[40px] h-[40px] flex justify-center items-center text-2xl rounded-full bg-yellow-600 absolute -left-[54px] bottom-[5px]'><HiOutlineMailOpen /></p>
+                            <p className=' py-1 px-5 font-bold rounded-full bg-[#d2a6d23c] '>JUN,2024-PRESENT</p>
+                        </div>
+                        <h3 className='font-bold text-2xl mt-5 '>FRONTEND DEVELOPER</h3>
+                        <p className='mt-5'>1 year of experience as a frontend developer, skilled in building responsive and user-friendly web interfaces using HTML, CSS, JavaScript, and modern frameworks like React.js.</p>
+
                     </div>
-                    <h3  className='font-bold text-2xl mt-5 '>FRONTEND DEVELOPER</h3>
-                    <p  className='mt-5'>1 year of experience as a frontend developer, skilled in building responsive and user-friendly web interfaces using HTML, CSS, JavaScript, and modern frameworks like React.js.</p>
+
+                     <div className="border-l-2 pl-8 ">
+                        <div className="flex relative">
+                            <p className='border w-[40px] h-[40px] flex justify-center items-center text-2xl rounded-full bg-yellow-600 absolute -left-[54px] bottom-[5px]'><FaGraduationCap /></p>
+                            <p className=' py-1 px-5 font-bold rounded-full bg-[#d2a6d23c] '>2019-2020</p>
+                        </div>
+                        <h2 className='font-bold text-2xl mt-5 '>DEGREE PASS <span className='text-xl'>-Mohangonj Govt Collage</span> </h2>
+                        <p className='mt-5'>I successfully completed my <span className='font-bold'>first year</span> in the Degree Pass program, further strengthening my academic foundation. During this period, I enhanced my knowledge in diverse subjects, improved my analytical and problem-solving skills, and continued developing the discipline and dedication needed for higher studies.</p>
+
+                    </div>
+
+
                 </div>
-                
+
 
 
             </div>
