@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Whon from './h-img/portfolio.jpg'
+import Whon from './h-img/anas_light.jpg'
 import { FaHome } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io";
 import { MdOutlineBusinessCenter } from "react-icons/md";
