@@ -17,12 +17,12 @@ const Skil = () => {
                 <div className=" flex md:justify-between flex-wrap gap-[50px] justify-center md:mt-16 mt-10 ">
                     <div className="text-center  ">
                         <img className='md:w-[150px] w-[110px]  ' src={Html} alt="" />
-                        <h4 className='mt-5 font-bold '>HTML</h4>
+                        <h4 className='mt-5 font-bold '>HTML5</h4>
                     </div>
 
                     <div className="text-center ">
                         <img className='md:w-[150px] w-[110px] ' src={Css} alt="" />
-                        <h4 className='mt-5 font-bold'>CSS</h4>
+                        <h4 className='mt-5 font-bold'>CSS3</h4>
                     </div>
 
                     <div className="text-center ">
@@ -40,7 +40,7 @@ const Skil = () => {
 
                 <div className="text-center ">
                     <img className='md:w-[150px] w-[110px] ' src={Talwind} alt="" />
-                    <h4 className='mt-5 font-bold'>TALWIND</h4>
+                    <h4 className='mt-5 font-bold'>TALWIND CSS</h4>
                 </div>
 
                 <div className="text-center ">
