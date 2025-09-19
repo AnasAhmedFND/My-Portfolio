@@ -54,7 +54,7 @@ const About = () => {
           </div>
           <div className="flex  items-center relative group  mt-10 md:w-[38%] ">            
             
-            <a onClick={hendeleResume} className='border-2 border-yellow-600 font-bold   py-2 pl-7 pr-12 rounded-full group-hover:bg-yellow-600 hover:duration-300 md:ml-0 ml-5' href="/ANAS'S.pdf " download >DOWNLOAD RESUME</a>
+            <a onClick={hendeleResume} className='border border-yellow-600 font-bold py-4 pl-7 pr-16 rounded-full group-hover:bg-yellow-600 hover:duration-300 md:ml-0 ml-5  ' href="/ANAS'S.pdf " download >DOWNLOAD RESUME</a>
              <ToastContainer
                 position="top-center"
                 autoClose={1000}
@@ -69,7 +69,7 @@ const About = () => {
                
               />        
 
-            <p className=' w-[42px] h-[42px] rounded-full absolute flex justify-center items-center md:left-[203px] left-[218px]  bg-yellow-600 cursor-pointer '><FaDownload className=' text-2xl  ' /></p>
+            <p className=' w-[57px] h-[57px] rounded-full absolute flex justify-center items-center md:left-[203px] left-[219px]  bg-yellow-600 cursor-pointer '><FaDownload className=' text-2xl  ' /></p>
           </div>
 
         </div>
