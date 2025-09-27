@@ -82,7 +82,7 @@ const About = () => {
           </div>
 
           <div className="border-4 border-yellow-600 flex flex-col gap-5 w-full md:h-1/2 items-center rounded-2xl">
-            <h3 className='text-6xl font-bold text-yellow-600 mt-5 '>15+</h3>
+            <h3 className='text-6xl font-bold text-yellow-600 mt-5 '>20+</h3>
             <p>PROJECTS DONE</p>
           </div>
 
