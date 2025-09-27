@@ -7,6 +7,7 @@ import Talwind from './A-img/s5.png'
 import Reactjs from './A-img/s6.png'
 import Next from './A-img/s7.png'
 import Git from './A-img/s8.png'
+import { motion } from "motion/react"
 
 const Skil = () => {
     return (
@@ -16,7 +17,14 @@ const Skil = () => {
 
                 <div className=" flex md:justify-between flex-wrap gap-[50px] justify-center md:mt-16 mt-10 ">
                     <div className="text-center  ">
-                        <img className='md:w-[150px] w-[110px]  ' src={Html} alt="" />
+                         <motion.img
+                            animate={{ rotate: 360 }}
+                            transition={{
+                                duration: 5,       // ২ সেকেন্ডে একবার ঘুরবে
+                                ease: "linear",    // constant speed
+                                repeat: Infinity,  // অনন্তবার repeat হবে
+                            }}
+                         className='md:w-[150px] w-[110px] rounded-lg ' src={Html} alt="" />
                         <h4 className='mt-5 font-bold '>HTML5</h4>
                     </div>
 
@@ -26,37 +34,58 @@ const Skil = () => {
                     </div>
 
                     <div className="text-center ">
-                        <img className='md:w-[150px] w-[110px]' src={Js} alt="" />
+                         <motion.img
+                            animate={{ rotate: 360 }}
+                            transition={{
+                                duration: 5,    
+                                ease: "linear",    
+                                repeat: Infinity,  
+                            }}
+                         className='md:w-[150px] w-[110px] rounded-lg' src={Js} alt="" />
                         <h4 className='mt-5 font-bold'>JAVASCRIPT</h4>
                     </div>
 
                     <div className="text-center ">
-                        <img className='md:w-[150px] w-[110px]' src={Boots} alt="" />
+                         <img className='md:w-[150px] w-[110px]' src={Boots} alt="" />
                         <h4 className='mt-5 font-bold'>BOOTSTRAP</h4>
                     </div>
                 </div>
 
-                <div className="flex md:justify-between flex-wrap gap-[50px] justify-center  mt-10 ">                
+                <div className="flex md:justify-between flex-wrap gap-[50px] justify-center  mt-10 ">
 
-                <div className="text-center ">
-                    <img className='md:w-[150px] w-[110px] ' src={Talwind} alt="" />
-                    <h4 className='mt-5 font-bold'>TALWIND CSS</h4>
-                </div>
+                    <div className="text-center ">
+                         <img className='md:w-[150px] w-[110px] ' src={Talwind} alt="" />
+                        <h4 className='mt-5 font-bold'>TALWIND CSS</h4>
+                    </div>
 
-                <div className="text-center ">
-                    <img className='md:w-[150px] w-[110px] ' src={Reactjs} alt="" />
-                    <h4 className='mt-5 font-bold'>REACT</h4>
-                </div>
+                    <div className="text-center ">
+                        <motion.img
+                            animate={{ rotate: 360 }}
+                            transition={{
+                                duration: 5,      
+                                ease: "linear",    
+                                repeat: Infinity,  
+                            }}
+                            className='md:w-[150px] w-[110px] rounded-lg ' src={Reactjs} alt="" />
+                        <h4 className='mt-5 font-bold'>REACT</h4>
+                    </div>
 
-                <div className="text-center ">
-                    <img className='md:w-[150px] w-[110px] ' src={Next} alt="" />
-                    <h4 className='mt-5 font-bold'>NEXT JS</h4>
-                </div>
+                    <div className="text-center ">
+                        <img className='md:w-[150px] w-[110px] ' src={Next} alt="" />
+                        <h4 className='mt-5 font-bold'>NEXT JS</h4>
+                    </div>
 
-                <div className="text-center ">
-                    <img className='md:w-[150px] w-[110px] ' src={Git} alt="" />
-                    <h4 className='mt-5 font-bold'>GITHUB</h4>
-                </div>
+                    <div className="text-center ">
+                        <motion.img
+                            animate={{ rotate: 360 }}
+                            transition={{
+                                duration: 5,       
+                                ease: "linear",    
+                                repeat: Infinity,  
+                            }}
+                         className='md:w-[150px] w-[110px] rounded-full md:-z-50 ' src={Git} alt="" />
+                        <h4 className='mt-5 font-bold'>GITHUB</h4>
+                    </div>
                 </div>
 
             </div>

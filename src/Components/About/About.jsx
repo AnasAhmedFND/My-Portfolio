@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
 import { FaDownload } from "react-icons/fa";
 import Whon from './A-img/portfolio.jpg'
 import { IoIosArrowUp } from "react-icons/io";
 import { Link } from 'react-scroll';
 import { ToastContainer, toast } from 'react-toastify';
 
+import { motion, useMotionValue, animate } from "framer-motion";
 
 const About = () => {
 
@@ -12,6 +14,22 @@ const About = () => {
     toast.success('Download Resume')
 
   }
+
+   // counter setup
+  const count = useMotionValue(0);
+  const [display, setDisplay] = useState(0);
+
+  useEffect(() => {
+    const animation = animate(count, 20, {
+      duration: 5,       
+      ease: "easeOut",
+      onUpdate: (latest) => {
+        setDisplay(Math.round(latest)); 
+      }
+    });
+
+    return animation.stop;
+  }, [count]);
 
   return (
     <section id='about' className='bg-[#212428] md:py-20 py-10 px-2 md:px-0'>
@@ -82,7 +100,7 @@ const About = () => {
           </div>
 
           <div className="border-4 border-yellow-600 flex flex-col gap-5 w-full md:h-1/2 items-center rounded-2xl">
-            <h3 className='text-6xl font-bold text-yellow-600 mt-5 '>20+</h3>
+            <h3 className='text-6xl font-bold text-yellow-600 mt-5 '>{display}+</h3>
             <p>PROJECTS DONE</p>
           </div>
 
