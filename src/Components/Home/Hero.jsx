@@ -33,17 +33,15 @@ const Hero = () => {
   }
 
 
-
-
   return (
-    <section id='hero' ref={homeRef} className=' bg-[#212428] text-white md:py-10 py-4  px-2'>
+    <section id='hero' ref={homeRef} className=' bg-[#212428] text-white md:py-10 py-4  px-2 '>
 
       <div className="flex md:flex-row flex-col-reverse  gap-[2%]  ">
 
         <div className="flex md:flex-row flex-col-reverse gap-[4%] w-[92%]  container mx-auto">
           <div className="flex md:justify-end md:w-[36%] ml-[4%] md:mt-0 mt-5  ">
             <div className=" border bg-[#D1CDCE] rounded-2xl flex flex-col justify-end  ">
-              <img className=' rounded-2xl hidden md:block ' src={Whon} alt="" />
+              <img className=' rounded-2xl hidden md:block  ' src={Whon} alt="" />
 
             </div>
 
@@ -86,22 +84,22 @@ const Hero = () => {
 
         <ul className={` md:w-[5%] flex flex-col gap-6 text-2xl md:static   px-2 ${menu ? 'absolute top-18 left-0  bg-black/85 w-full h-screen duration-1000 ease-in-out  ' : 'absolute top-19 -left-72 duration-700 ease-in-out '}`} >
 
-          <li onClick={hendelMenuBar} > <a className='md:fixed top-[5%]   mt-12 md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#home" onClick={() => scrollToSection(homeRef)} > <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[146px] hidden md:group-hover:block '>Home</span>  <FaHome className='w-[50px] ' /> <span className='font-bold md:hidden '>Home</span>
+          <li  onClick={() => setMenu(false)} > <a className='md:fixed top-[5%]   mt-12 md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#home" onClick={() => scrollToSection(homeRef)} > <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[146px] hidden md:group-hover:block '>Home</span>  <FaHome className='w-[50px] ' /> <span className='font-bold md:hidden '>Home</span>
 
           </a> </li>
 
 
-          <li className='md:fixed top-[25%] ' > <Link to='about' smooth={true} duration={500} > <a onClick={hendelMenuBar} className=' md:flex-row-reverse  md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border md:border-[#ff55ff15] md:bg-[#ff55ff15] border-b pb-4 cursor-pointer group' href="#about"  > <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[147px] hidden md:group-hover:block '>About</span> <IoIosContact className='w-[50px] text-3xl ' /><span className='font-bold md:hidden '>About</span>
+          <li className='md:fixed top-[25%] ' > <Link to='about' smooth={true} duration={500}  onClick={() => setMenu(false)} > <a className=' md:flex-row-reverse  md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border md:border-[#ff55ff15] md:bg-[#ff55ff15] border-b pb-4 cursor-pointer group' href="#about"  > <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[147px] hidden md:group-hover:block '>About</span> <IoIosContact className='w-[50px] text-3xl ' /><span className='font-bold md:hidden '>About</span>
           </a> </Link> </li>
 
 
-          <li  className='md:fixed top-[37%] ' > <Link to='portfolio' smooth={true} duration={500} > <a  onClick={hendelMenuBar} className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#portfolio">  <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[100px] '>Portfolio</span> <MdOutlineBusinessCenter className='w-[50px] text-3xl ' /><span className='font-bold md:hidden'>Portfolio</span>
+          <li  className='md:fixed top-[37%] ' > <Link to='portfolio' smooth={true} duration={500}  onClick={() => setMenu(false)} > <a  className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#portfolio">  <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[100px] '>Portfolio</span> <MdOutlineBusinessCenter className='w-[50px] text-3xl ' /><span className='font-bold md:hidden'>Portfolio</span>
           </a> </Link> </li>
 
-          <li  className='md:fixed top-[49%] ' > <Link to='service' smooth={true} duration={500} > <a  onClick={hendelMenuBar} className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#service">  <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[100px] '>Servics</span> <FaDiagramProject className='w-[50px] ' /><span className='font-bold md:hidden'>Servics</span>
+          <li  className='md:fixed top-[49%] ' > <Link to='service' smooth={true} duration={500}  onClick={() => setMenu(false)} > <a className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#service">  <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[100px] '>Servics</span> <FaDiagramProject className='w-[50px] ' /><span className='font-bold md:hidden'>Servics</span>
           </a> </Link> </li>
 
-          <li  className='md:fixed top-[61%] ' > <Link to='contact' smooth={true} duration={500} > <a  onClick={hendelMenuBar} className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#contact"> <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[100px] '>Contact</span> <HiOutlineMailOpen className='w-[50px] text-3xl ' /><span className='font-bold md:hidden'>Contact</span>
+          <li  className='md:fixed top-[61%] ' > <Link to='contact' smooth={true} duration={500}  onClick={() => setMenu(false)} > <a className=' md:w-[50px] md:h-[50px] md:rounded-full md:flex md:justify-center md:items-center md:hover:bg-yellow-600 md:p-2 flex gap-4 items-center md:border-none border-b pb-4 cursor-pointer md:border md:border-[#f5f5] md:bg-[#ff55ff15] group' href="#contact"> <span className='md:absolute md:bg-yellow-600  md:rounded-full md:px-4 md:py-1 md:mr-[150px] hidden md:group-hover:block -right-[100px] '>Contact</span> <HiOutlineMailOpen className='w-[50px] text-3xl ' /><span className='font-bold md:hidden'>Contact</span>
           </a> </Link> </li>
 
 
