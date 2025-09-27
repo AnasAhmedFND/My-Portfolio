@@ -24,10 +24,10 @@ const Portfolio = () => {
         </div>
 
         {/* portfolio items 1-2 */}
-        <div className="flex justify-around border">
-          <div className="md:mt-32 mt-20 md:flex  justify-between md:w-[80%] ">
+       
+          <div className="md:mt-32 mt-20 md:flex  justify-evenly md:w-[100%]  ">
             <a href="https://hekto-ecommerce-project.vercel.app/" target='_blanck' rel='noopener noopener' >
-            
+
               <div className="relative md:w-[469px] md:h-[194px]">
                 <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Hecto} alt="" />
                 <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project <br /> 'Hekto'</h4>
@@ -46,21 +46,21 @@ const Portfolio = () => {
 
           </div>
 
-        </div>
+       
 
         {/* portfolio items 3-4 and arrow img */}
 
-        <div className="md:mt-10 mt-5 md:flex justify-between  ">
+        <div className="md:mt-10 mt-5 md:flex justify-between  boder items-center ">
 
           <a href="https://shane-resturant.vercel.app/" target='_blanck' rel='noopener noopener'>
-            <div className="relative border  ">
+            <div className="relative   ">
               <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Shane} alt="" />
               <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>Resturant Project <br /> 'Shane Resturant' </h4>
             </div>
           </a>
 
           {/* arrow img */}
-          <div className="hidden md:block border  ">
+          <div className="hidden md:block   ">
             <motion.img
               animate={{ rotate: 360 }}
               transition={{
@@ -85,8 +85,8 @@ const Portfolio = () => {
 
         {/* portfolio items 5-6 */}
 
-        <div className="flex justify-evenly">
-          <div className="md:mt-10 mt-5 md:flex justify-between md:w-[80%] ">
+        
+          <div className="md:mt-10 mt-5 md:flex justify-evenly md:w-[100%] ">
 
             <a href="https://buildecxo-njs.vercel.app/" target='_blanck' rel='noopener noopener'>
               <div className="relative md:w-[469px] md:h-[194px]   ">
@@ -105,7 +105,7 @@ const Portfolio = () => {
 
           </div>
 
-        </div>
+       
 
 
 
