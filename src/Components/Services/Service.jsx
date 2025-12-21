@@ -21,7 +21,7 @@ const Service = () => {
         </div>
 
         </div>
-        <div className="flex flex-wrap gap-5  text-white md:mt-20 mt-14 ">
+        <div className="flex flex-wrap  md:gap-2 gap-5  text-white md:mt-20 mt-14 ">
 
           <div className="md:w-[32%] w-[90%] md:ml-0 ml-[5%]  border-2 border-yellow-600 rounded-md shadow-amber-600 hover:shadow-2xl hover:scale-105 shadow-lg p-4">
             <img src={Ser1} alt="" />

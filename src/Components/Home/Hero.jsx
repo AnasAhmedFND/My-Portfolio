@@ -51,11 +51,11 @@ const Hero = () => {
 
             <div className="md:mt-20 mt-5 text-yellow-600  flex gap-1 items-center relative">
               <p className='md:w-[40px]  bg-yellow-600 h-[4px] rounded-md'></p>
-              <h1 className='  font-bold md:text-6xl text-3xl md:ml-0 ml-3 '> <span className='md:opacity-0 absolute left-0 '>-</span> I'M ANAS AHMED.</h1>
+              <h1 className='  font-bold md:text-5xl text-2xl md:ml-0 ml-3 '> <span className='md:opacity-0 absolute left-0 '>-</span> I'M ANAS AHMED.</h1>
 
             </div>
 
-            <div className="font-bold md:mt-4 mt-2 md:text-[49px] text-[28px] md:ml-[45px] ml-[15px] ">
+            <div className="font-bold md:mt-4 mt-2 md:text-[28px] text-[35px] md:ml-[45px] ml-[15px] ">
               <TypeAnimation className='  '
                 sequence={[
                   ' Front-End Developer', 1000,

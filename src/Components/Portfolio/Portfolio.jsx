@@ -25,20 +25,20 @@ const Portfolio = () => {
 
         {/* portfolio items 1-2 */}
        
-          <div className="md:mt-32 mt-20 md:flex  justify-evenly md:w-[100%]  ">
-            <a href="https://hekto-ecommerce-project.vercel.app/" target='_blanck' rel='noopener noopener' >
+          <div className="md:mt-32 mt-20 md:flex md:w-[100%] md:gap-[2%] justify-evenly    ">
+            <a className='  ' href="https://hekto-ecommerce-project.vercel.app/" target='_blanck' rel='noopener noopener' >
 
-              <div className="relative md:w-[469px] md:h-[194px]">
+              <div className="relative md:h-[194px]">
                 <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Hecto} alt="" />
-                <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project <br /> 'Hekto'</h4>
+                <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[378px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project <br /> 'Hekto'</h4>
               </div>
             </a>
 
-            <a href="https://exclusive-e-commerce-lsil.vercel.app/" target='_blanck' rel='noopener noopener' >
+            <a className='' href="https://exclusive-e-commerce-lsil.vercel.app/" target='_blanck' rel='noopener noopener' >
 
-              <div className="relative md:mt-0 mt-5 md:w-[469px] md:h-[194px]">
+              <div className="relative md:mt-0 mt-5  md:h-[194px]">
                 <img className='md:w-[469px] md:h-[194px] h-[148px] rounded-2xl' src={Exclusive} alt="" />
-                <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 ease-in-out border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project <br /> 'Exclusive'</h4>
+                <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 ease-in-out border md:h-[194px] h-[148px] md:w-[378px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project <br /> 'Exclusive'</h4>
               </div>
             </a>
 
@@ -50,12 +50,12 @@ const Portfolio = () => {
 
         {/* portfolio items 3-4 and arrow img */}
 
-        <div className="md:mt-10 mt-5 md:flex justify-between  boder items-center ">
+        <div className="md:mt-10 mt-5 md:flex justify-between   items-center ">
 
           <a href="https://shane-resturant.vercel.app/" target='_blanck' rel='noopener noopener'>
             <div className="relative   ">
               <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Shane} alt="" />
-              <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>Resturant Project <br /> 'Shane Resturant' </h4>
+              <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border bg-red-600 md:h-[194px] h-[148px] md:w-[310px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>Resturant Project <br /> 'Shane Resturant' </h4>
             </div>
           </a>
 
@@ -76,7 +76,7 @@ const Portfolio = () => {
           <a href="https://pro-health-sooty.vercel.app/" target='_blanck' rel='noopener noopener' >
             <div className="relative md:mt-0 mt-5 ">
               <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Health} alt="" />
-              <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 ease-in-out border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>Health Care Project </h4>
+              <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 ease-in-out border bg-red-600 md:h-[194px] h-[148px] md:w-[310px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>Health Care Project </h4>
             </div>
           </a>
 
@@ -86,19 +86,19 @@ const Portfolio = () => {
         {/* portfolio items 5-6 */}
 
         
-          <div className="md:mt-10 mt-5 md:flex justify-evenly md:w-[100%] ">
+          <div className="md:mt-10 mt-5 md:flex md:w-[100%] md:gap-[2%] justify-evenly ">
 
-            <a href="https://buildecxo-njs.vercel.app/" target='_blanck' rel='noopener noopener'>
-              <div className="relative md:w-[469px] md:h-[194px]   ">
+            <a className=' ' href="https://buildecxo-njs.vercel.app/" target='_blanck' rel='noopener noopener'>
+              <div className="relative  md:h-[194px]   ">
                 <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Buildexo} alt="" />
-                <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>Resturant Project <br /> 'Buildecxo' </h4>
+                <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border bg-red-600 md:h-[194px] h-[148px] md:w-[377px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>Resturant Project <br /> 'Buildecxo' </h4>
               </div>
             </a>
 
-            <a href="https://jinstore-3f7k.vercel.app/" target='_blanck' rel='noopener noopener' >
-              <div className="relative md:mt-0 mt-5 md:w-[469px] md:h-[194px]">
+            <a className=' ' href="https://jinstore-3f7k.vercel.app/" target='_blanck' rel='noopener noopener' >
+              <div className="relative md:mt-0 mt-5  md:h-[194px]">
                 <img className='md:w-[469px] md:h-[194px]  rounded-2xl' src={Jenstore} alt="" />
-                <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 ease-in-out border md:h-[194px] h-[148px] md:w-[469px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project</h4>
+                <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 ease-in-out border bg-red-600 md:h-[194px] h-[148px] md:w-[377px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project</h4>
               </div>
             </a>
 

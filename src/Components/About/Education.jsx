@@ -90,7 +90,7 @@ const Education = () => {
                             <p className=' py-1 px-5 font-bold rounded-full bg-[#d2a6d23c] '>JUN,2024-PRESENT</p>
                         </div>
                         <h3 className='font-bold text-2xl mt-5 '>FRONTEND DEVELOPER</h3>
-                        <p className='mt-5'>1 year of experience as a frontend developer, skilled in building responsive and user-friendly web interfaces using HTML, CSS, JavaScript, and modern frameworks like React.js.</p>
+                        <p className='mt-5'>2 year of experience as a frontend developer, skilled in building responsive and user-friendly web interfaces using HTML, CSS, JavaScript, and modern frameworks like React.js.</p>
 
                     </motion.div>
 
