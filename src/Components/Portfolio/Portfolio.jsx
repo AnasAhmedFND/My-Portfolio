@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Hecto from './port-img/hecto.png'
 import Shane from './port-img/shane.png'
 import Exclusive from './port-img/exclosive.png'
@@ -6,15 +6,23 @@ import Jenstore from './port-img/jinstore.png'
 import Buildexo from './port-img/buildexo.png'
 import Health from './port-img/health.png'
 import Arrow from './port-img/arrow-4.png'
+import Ai from './port-img/ai.png'
 import { motion } from "motion/react"
 
 
 
 
 const Portfolio = () => {
+
+  const [more, setMore] = useState(false)
+
+  
+
   return (
-    <section id='portfolio' className='bg-[#212428] md:px-0 px-2 '>
-      <div className="container mx-auto py-20 ">
+    <section id='portfolio' className='bg-[#212428] md:px-0 px-2 md:pb-0 pb-10 '>
+
+      
+      <div className="container mx-auto  ">
         <div className="relative ">
           <h2 className='text-center font-bold md:text-5xl text-3xl text-white '>MY <span className='text-yellow-600'>PORTFOLIO</span> </h2>
           <div className="flex justify-center ">
@@ -24,29 +32,28 @@ const Portfolio = () => {
         </div>
 
         {/* portfolio items 1-2 */}
-       
-          <div className="md:mt-32 mt-20 md:flex md:w-[100%] md:gap-[2%] justify-evenly    ">
-            <a className='  ' href="https://hekto-ecommerce-project.vercel.app/" target='_blanck' rel='noopener noopener' >
 
-              <div className="relative md:h-[194px]">
-                <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Hecto} alt="" />
-                <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[378px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project <br /> 'Hekto'</h4>
-              </div>
-            </a>
+        <div className="md:mt-32 mt-20 md:flex md:w-[100%] md:gap-[2%] justify-evenly    ">
+          <a className='  ' href="https://hekto-ecommerce-project.vercel.app/" target='_blanck' rel='noopener noopener' >
 
-            <a className='' href="https://exclusive-e-commerce-lsil.vercel.app/" target='_blanck' rel='noopener noopener' >
+            <div className="relative md:h-[194px]">
+              <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Hecto} alt="" />
+              <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[378px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project <br /> 'Hekto'</h4>
+            </div>
+          </a>
 
-              <div className="relative md:mt-0 mt-5  md:h-[194px]">
-                <img className='md:w-[469px] md:h-[194px] h-[148px] rounded-2xl' src={Exclusive} alt="" />
-                <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 ease-in-out border md:h-[194px] h-[148px] md:w-[378px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project <br /> 'Exclusive'</h4>
-              </div>
-            </a>
+          <a className='' href="https://exclusive-e-commerce-lsil.vercel.app/" target='_blanck' rel='noopener noopener' >
+
+            <div className="relative md:mt-0 mt-5  md:h-[194px]">
+              <img className='md:w-[469px] md:h-[194px] h-[148px] rounded-2xl' src={Exclusive} alt="" />
+              <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 ease-in-out border md:h-[194px] h-[148px] md:w-[378px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project <br /> 'Exclusive'</h4>
+            </div>
+          </a>
 
 
 
-          </div>
+        </div>
 
-       
 
         {/* portfolio items 3-4 and arrow img */}
 
@@ -85,32 +92,65 @@ const Portfolio = () => {
 
         {/* portfolio items 5-6 */}
 
-        
-          <div className="md:mt-10 mt-5 md:flex md:w-[100%] md:gap-[2%] justify-evenly ">
+        <div className="md:mt-10 mt-5 md:flex md:w-[100%] md:gap-[2%] justify-evenly ">
 
-            <a className=' ' href="https://buildecxo-njs.vercel.app/" target='_blanck' rel='noopener noopener'>
-              <div className="relative  md:h-[194px]   ">
-                <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Buildexo} alt="" />
-                <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border bg-red-600 md:h-[194px] h-[148px] md:w-[377px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>Resturant Project <br /> 'Buildecxo' </h4>
-              </div>
-            </a>
+          <a className=' ' href="https://buildecxo-njs.vercel.app/" target='_blanck' rel='noopener noopener'>
+            <div className="relative  md:h-[194px]   ">
+              <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Buildexo} alt="" />
+              <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border bg-red-600 md:h-[194px] h-[148px] md:w-[377px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>Resturant Project <br /> 'Buildecxo' </h4>
+            </div>
+          </a>
 
-            <a className=' ' href="https://jinstore-3f7k.vercel.app/" target='_blanck' rel='noopener noopener' >
-              <div className="relative md:mt-0 mt-5  md:h-[194px]">
-                <img className='md:w-[469px] md:h-[194px]  rounded-2xl' src={Jenstore} alt="" />
-                <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 ease-in-out border bg-red-600 md:h-[194px] h-[148px] md:w-[377px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project</h4>
-              </div>
-            </a>
-
-
-          </div>
-
-       
+          <a className=' ' href="https://jinstore-3f7k.vercel.app/" target='_blanck' rel='noopener noopener' >
+            <div className="relative md:mt-0 mt-5  md:h-[194px]">
+              <img className='md:w-[469px] md:h-[194px]  rounded-2xl' src={Jenstore} alt="" />
+              <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 ease-in-out border bg-red-600 md:h-[194px] h-[148px] md:w-[377px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>E-commerce Project</h4>
+            </div>
+          </a>
 
 
+        </div>
 
 
       </div>
+
+
+      {more && (
+        <div className="container mx-auto mt-5 ">
+         <div className=" md:flex md:w-[100%] md:gap-[2%] justify-evenly    ">
+          <a className='  ' href="https://bighlo-vnzw.vercel.app/" target='_blanck' rel='noopener noopener' >
+
+            <div className="relative md:h-[194px]">
+              <img className='md:w-[469px] md:h-[194px] rounded-2xl' src={Ai} alt="" />
+              <h4 className='absolute -bottom-0 text-2xl font-bold -left-0 hover:bg-yellow-600 duration-700 border md:h-[194px] h-[148px] md:w-[378px] w-[344px] flex justify-center items-center  opacity-5 hover:opacity-90 rounded-2xl '>Ai & Shop Project <br /> 'Bithlo'</h4>
+            </div>
+          </a>
+
+          <div className="border-4 border-[#284246] rounded-2xl md:py-10 md:px-10 md:w-[35%] h-[194px] text-5xl cursor-pointer md:mt-0 mt-5 ">
+            <h4>Add Project...+</h4>
+          </div>
+
+
+
+        </div>
+  
+        </div>
+
+      )
+
+      }
+
+      {/* See More button............................................ */}
+      <div className="flex justify-center mt-5  ">
+        <button onClick={() => setMore (!more) } className='container mx-auto py-5 px-8 rounded-4xl font-bold text-white cursor-pointer hover:bg-amber-500 border border-amber-500  w-[200px]  '>{more ? "See Back..<" : "See More.." } </button>
+
+      </div>
+
+
+
+
+
+
     </section>
   )
 }

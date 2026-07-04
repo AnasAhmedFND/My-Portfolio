@@ -16,7 +16,7 @@ const Service = () => {
         <div className="relative">
         <h2 className='text-center font-bold md:text-5xl text-3xl text-white'>WHAT I <span className='text-yellow-600'>PROVIDE</span> </h2>
         <div className="flex justify-center ">
-        <h2 className='md:text-[110px] text-[80px] font-bold text-white absolute md:-bottom-14 -bottom-[40px] opacity-10 tracking-widest '>SERVICE</h2>
+        <h2 className='md:text-[110px] text-[70px] font-bold text-white absolute md:-bottom-14 -bottom-[35px] opacity-10 tracking-widest '>SERVICE</h2>
 
         </div>
 

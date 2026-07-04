@@ -55,7 +55,7 @@ const Hero = () => {
 
             </div>
 
-            <div className="font-bold md:mt-4 mt-2 md:text-[28px] text-[35px] md:ml-[45px] ml-[15px] ">
+            <div className="font-bold md:mt-4 mt-2 md:text-[28px] text-[20px] md:ml-[45px] ml-[15px] ">
               <TypeAnimation className='  '
                 sequence={[
                   ' Front-End Developer', 1000,

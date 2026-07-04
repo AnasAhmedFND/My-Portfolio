@@ -35,9 +35,9 @@ const About = () => {
     <section id='about' className='bg-[#212428] md:py-20 py-10 px-2 md:px-0'>
 
       <div className="relative ">
-        <h2 className='md:text-6xl text-4xl font-bold  text-white flex justify-center z-10'> ABOUT  <span className=' ml-3 text-yellow-600'> ME </span> </h2>
+        <h2 className='md:text-6xl text-4xl font-bold  text-white flex justify-center z-10  '> ABOUT  <span className=' ml-3 text-yellow-600'> ME </span> </h2>
         <div className="flex justify-center  ">
-        <h2 className='md:text-[110px] text-[80px]  font-bold  text-white opacity-10 absolute md:-bottom-12 -bottom-[40px] '>RECUME</h2>
+        <h2 className='md:text-[110px] text-[70px]  font-bold  text-white opacity-10 absolute md:-bottom-12 -bottom-[35px] '>RECUME</h2>
           
         </div>
       </div>
